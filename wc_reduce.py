@@ -17,9 +17,9 @@ for line in sys.stdin:
         current_count += count
     else:
         if previous_word:
-            print '%s\t%s' % (previous_word, current_count)
+            print('%s\t%s' % (previous_word, current_count))
         current_count = count
         previous_word = current_word
 
 if previous_word == current_word:
-    print '%s\t%s' % (previous_word, current_count)
+    print('%s\t%s' % (previous_word, current_count))
